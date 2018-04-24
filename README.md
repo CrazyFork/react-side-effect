@@ -1,3 +1,11 @@
+
+
+这个库的核心逻辑就是在封装了高阶组件, 然后拦截任何props改变的事件, trigger change 调用 
+`mountedComps.reduce((p, c)=> reducePropsToState(c.props), {})` 去触发改变
+
+
+
+
 # React Side Effect [![Downloads](https://img.shields.io/npm/dm/react-side-effect.svg)](https://npmjs.com/react-side-effect) [![npm version](https://img.shields.io/npm/v/react-side-effect.svg?style=flat)](https://www.npmjs.com/package/react-side-effect)
 
 Create components whose prop changes map to a global side effect.
